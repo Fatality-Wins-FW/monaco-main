@@ -2581,34 +2581,48 @@ function setupAutosave() {
 				base: 'vs-dark',
 				inherit: true,
 				colors: {
-					"editor.background": '#141414', //ur background color
+					"editor.background": '#1a1b26', // Tokyo Night background
+					"editor.foreground": '#c0caf5',
+					"editorCursor.foreground": '#c0caf5',
+					"editor.lineHighlightBackground": '#292e42',
+					"editorLineNumber.foreground": '#3b4261',
+					"editor.selectionBackground": '#33467C',
+					"editor.inactiveSelectionBackground": '#33467C80'
 				},
 				rules: [{
 						token: 'global',
-						foreground: '6699cc', // //FFFFFF
-						fontStyle: "bold"
+						foreground: 'c0caf5',
 					},
 					{
 						token: 'keyword',
-						foreground: 'cc99cc',
-						fontStyle: "bold"
+						foreground: 'bb9af7',
+						fontStyle: 'italic'
 					},
 					{
 						token: 'comment',
-						foreground: '999999'
+						foreground: '565f89',
+						fontStyle: 'italic'
 					},
 					{
 						token: 'number',
-						foreground: 'f99157'
+						foreground: 'ff9e64'
 					},
 					{
 						token: 'string',
-						foreground: '99CC99'
+						foreground: '9ece6a'
 					},
 					{
 						token: 'Method',
-						foreground: 'ffa1dc'
+						foreground: '7aa2f7'
 					},
+					{
+						token: 'identifier',
+						foreground: 'c0caf5'
+					},
+					{
+						token: 'type',
+						foreground: '2ac3de'
+					}
 				]
 			});
 
